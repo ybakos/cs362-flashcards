@@ -1,12 +1,9 @@
-%p#notice= notice
-
-%p
-  %b Word:
-  = @flashcard.word
-%p
-  %b Definition:
-  = @flashcard.definition
-
-= link_to 'Edit', edit_flashcard_path(@flashcard)
-\|
-= link_to 'Back', flashcards_path
+.flip-card.mt-5{style: 'margin: auto;'}
+  .flip-card-inner
+    .flip-card-front
+      %h2.card-title.my-5.py-5= @flashcard.word
+      %p.text-right
+        = link_to 'edit', edit_flashcard_path(@flashcard), style: 'margin-right: 20px;'
+        = link_to '❌', @flashcard, method: :delete, data: { confirm: 'Are you sure?' }
+    .flip-card-back
+      %p.my-5.py-5= @flashcard.definition
