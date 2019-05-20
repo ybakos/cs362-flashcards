@@ -1,23 +1,28 @@
 # Flashcards
 
-TODO
+**Flashcards** enables people to create virtual flashcards of vocabulary words,
+and to use them for learning.
 
 ## Development
 
 There are a few steps to get up and running in development.
 
-TODO
+`bundle install`
+`rails db:setup`
+`cp .env.example .env` and edit the necessary environment variables.
+`rails server`
 
 ### Customize `.env`
 
 * `RECAPTCHA_SITE_KEY`
 * `RECAPTCHA_SECRET_KEY`
 
-
 ## Testing
 
-TODO
+Rspec is installed for testing. We'll add some tests later. Right now there's
+just no time.
 
+TODO
 
 ## Production Notes
 
