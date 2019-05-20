@@ -1,1 +1,9 @@
-%h1 Home
+.flip-card.mt-5{style: 'margin: auto;'}
+  .flip-card-inner
+    .flip-card-front
+      %h2.card-title.my-5.py-5= @flashcard.word
+    .flip-card-back
+      %p.my-5.py-5= @flashcard.definition
+
+.text-center.mt-5
+  = link_to 'Create Your Own Flashcard', new_flashcard_path, class: 'btn btn-success'
