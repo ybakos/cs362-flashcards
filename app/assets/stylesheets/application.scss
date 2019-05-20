@@ -75,6 +75,10 @@ footer {
   }
 }
 
+.navbar-brand {
+  font-family: 'Permanent Marker', cursive;
+}
+
 /* Authentication */
 
 body.sessions.new, body.registrations.new, body.registrations.create {
